@@ -2,4 +2,6 @@
 
 class Factory{
 	public:
+		Factory();
+		
 }

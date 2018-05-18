@@ -4,20 +4,19 @@
 #include<string>
 #ifndef DATA_H
 #define DATA_H
-#endif
 using namespace std;
-using namespace stdin;
 
 
 class Data{
 	private:
 		string name;
 		string url;
-		list <String> tags;
+		list <string> tags;
 	public:
+		Data(string names, string urls, list <string> tag);
 		string getName();
 		string getUrl();
-		string getTag();
+		list <string> getTag();
 };
 
 Data::Data(string names, string urls, list <string> tag):
@@ -26,8 +25,6 @@ Data::Data(string names, string urls, list <string> tag):
 	tags(tag)
 {}
 
-Data::~Data()
-{}
 
 string Data::getName()
 {
@@ -43,3 +40,5 @@ list <string> Data::getTag()
 {
 	return tags;
 }
+
+#endif
